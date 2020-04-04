@@ -8,6 +8,12 @@ import ContactMe from "./components/contactMe/contactMe";
 import Footer from "./components/footer/footer";
 import Axios from "axios";
 
+const encode = (data) => {
+  return Object.keys(data)
+    .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&");
+};
+
 class App extends Component {
   state = {
     nameEmailForm: "",
@@ -21,7 +27,7 @@ class App extends Component {
         <NavBar /> <Home /> <Portfolio /> <AboutMe /> <Blog />{" "}
         <ContactMe
           handleEmailFormChange={this.handleEmailFormChange}
-          // handleEmailFormSubmission={this.handleEmailFormSubmission}
+          handleEmailFormSubmission={this.handleEmailFormSubmission}
         />
         <Footer />
       </div>
@@ -34,20 +40,17 @@ class App extends Component {
     obj[key] = value;
     this.setState(obj);
   };
-  // async handleEmailFormSubmission(e){
-  //   e.preventDefault();
-  //   const {
-  //     nameEmailForm,
-  //     emailEmailForm,
-  //     subjectEmailForm,
-  //     messageEmailForm,
-  //   } = this.state;
-  //   const form = await Axios.post('/api/form', {
-  //     name: nameEmailForm,
-  //     email: emailEmailForm,
-  //     subject: subjectEmailForm,
-  //     message: messageEmailForm
-  //   })
-  //};
+
+  handleSubmit = (e) => {
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", ...this.state }),
+    })
+      .then(() => alert("Success!"))
+      .catch((error) => alert(error));
+
+    e.preventDefault();
+  };
 }
 export default App;

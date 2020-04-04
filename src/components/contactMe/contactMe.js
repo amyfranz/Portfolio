@@ -7,8 +7,7 @@ export default function contactMe(props) {
         <h1>contactMe</h1>
       </div>
       <div className="contactMeForm">
-        <form action="POST" data-netlify="true">
-          {/* onSubmit={props.handleEmailFormSubmission}> */}
+        <form name="contact" onSubmit={props.handleEmailFormSubmission}>
           <input
             type="text"
             placeholder="Name:"
