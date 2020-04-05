@@ -7,9 +7,79 @@ export default class home extends Component {
     return (
       <div id="home" className={styles.home}>
         <div className={styles.homeTitle}>
-          <h1>Hi.</h1>
-          <h2>I am Amy.</h2>
-          <h3>I'm a fullstack developer specialising in React.</h3>
+          <h1>
+            <ul>
+              <li>H</li>
+              <li>i</li>
+              <li>.</li>
+            </ul>
+          </h1>
+          <h2>
+            <ul>
+              <li>I</li>
+              <li> </li>
+              <li>a</li>
+              <li>m</li>
+              <li> </li>
+              <li>A</li>
+              <li>m</li>
+              <li>y</li>
+              <li>.</li>
+            </ul>
+          </h2>
+          <h3>
+            <ul>
+              <li>I</li>
+              <li> </li>
+              <li>a</li>
+              <li>m</li>
+              <li> </li>
+              <li>a</li>
+              <li> </li>
+              <li>f</li>
+              <li>u</li>
+              <li>l</li>
+              <li>l</li>
+              <li>s</li>
+              <li>t</li>
+              <li>a</li>
+              <li>c</li>
+              <li>k</li>
+              <li> </li>
+              <li>d</li>
+              <li>e</li>
+              <li>v</li>
+              <li>e</li>
+              <li>l</li>
+              <li>o</li>
+              <li>p</li>
+              <li>e</li>
+              <li>r</li>
+              <li> </li>
+              <li>s</li>
+              <li>p</li>
+              <li>e</li>
+              <li>c</li>
+              <li>i</li>
+              <li>a</li>
+              <li>l</li>
+              <li>i</li>
+              <li>s</li>
+              <li>i</li>
+              <li>n</li>
+              <li>g</li>
+              <li> </li>
+              <li>i</li>
+              <li>n</li>
+              <li> </li>
+              <li>r</li>
+              <li>e</li>
+              <li>a</li>
+              <li>c</li>
+              <li>t</li>
+              <li>.</li>
+            </ul>
+          </h3>
         </div>
         <div className={styles.homeImage}>
           <img

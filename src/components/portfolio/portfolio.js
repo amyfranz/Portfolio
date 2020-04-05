@@ -64,38 +64,44 @@ export default class Portfolio extends Component {
       slidesToScroll: 1,
     };
     return (
-      <div className={styles.projects} id="portfolio">
-        <Slider {...settings} className={styles.slides}>
-          {items.map((item, index) => {
-            return (
-              <div key={index} className={styles.carCard}>
-                <img className={styles.carImg} src={item.url} alt=""></img>
-                <div className={styles.carText}>
-                  <h1>{item.title}</h1>
-                  <h2>{item.lang}</h2>
-                  <div className={styles.carLinks}>
-                    <a
-                      href={item.projectSrc}
-                      alt="code"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      View Project
-                    </a>
-                    <a
-                      href={item.codeSrc}
-                      alt="code"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      View Code
-                    </a>
+      <div className={styles.myProjects}>
+        <div className={styles.myProjectsTitle}>
+          <h1>My Projects</h1>
+        </div>
+        <div className={styles.projects} id="portfolio">
+          <Slider {...settings} className={styles.slides}>
+            {items.map((item, index) => {
+              console.log(item);
+              return (
+                <div key={index} className={styles.carCard}>
+                  <img className={styles.carImg} src={item.url} alt=""></img>
+                  <div className={styles.carText}>
+                    <h1>{item.title}</h1>
+                    <h2>{item.lang}</h2>
+                    <div className={styles.carLinks}>
+                      <a
+                        href={item.projectSrc}
+                        alt="code"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        View Project
+                      </a>
+                      <a
+                        href={item.codeSrc}
+                        alt="code"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        View Code
+                      </a>
+                    </div>
                   </div>
                 </div>
-              </div>
-            );
-          })}
-        </Slider>
+              );
+            })}
+          </Slider>
+        </div>
       </div>
     );
   }

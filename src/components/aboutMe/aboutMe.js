@@ -7,6 +7,7 @@ export default function aboutMe() {
       <div className={styles.aboutMeInfo}>
         <h1>Hi, I am Amy.</h1>
         <h2>A London based full-stack developer specialising in React.</h2>
+        <h2>A Bit About Me</h2>
         <p className={styles.alignRight}>
           After being introduced to coding from a young age, I have always had a
           passion for it. I first started properly coding in school where I was
@@ -16,8 +17,8 @@ export default function aboutMe() {
           branding, a good mix of design, strategy and logic.
         </p>
         <p className={styles.alignLeft}>
-          During this time, I started working for tech startup companies,
-           {" "}<a
+          During this time, I started working for tech startup companies,{" "}
+          <a
             target="_blank"
             rel="noopener noreferrer"
             href="https://www.pragmattica.co.za/"

@@ -75,18 +75,18 @@ export default function navBar() {
               />
             </a>
           </li>
-          <li>
+          {/* <li>
             <FontAwesomeIcon
               icon={faBars}
               className={styles.Icon}
               id={styles.menuIcon}
             />
-            {/* <ul className="dropDownNav">
+             <ul className="dropDownNav">
               <li className="dropDownLink">style1</li>
               <li className="dropDownLink">style2</li>
               <li className="dropDownLink">style3</li>
-            </ul> */}
-          </li>
+            </ul> 
+          </li> */}
         </ul>
       </nav>
     </div>
