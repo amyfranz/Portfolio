@@ -1,0 +1,285 @@
+* {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: none;
+  box-sizing: border-box;
+}
+
+main {
+  margin-top: 10%;
+  overflow: hidden;
+}
+.nav {
+  overflow: hidden;
+  background-color: #d1e6df;
+  top: 0;
+  position: fixed;
+  display: flex;
+  z-index: 5;
+  -webkit-box-shadow: -14px 14px 21px -7px rgba(102, 91, 102, 0.52);
+  -moz-box-shadow: -14px 14px 21px -7px rgba(102, 91, 102, 0.52);
+  box-shadow: -14px 14px 21px -7px rgba(102, 91, 102, 0.52);
+}
+.logo {
+  flex: 1;
+  margin-top: 5px;
+}
+.navBarImg {
+  margin-left: 5px;
+  width: 70%;
+}
+.navBar {
+  flex: 6;
+}
+
+.navBarBar {
+  display: flex;
+  flex-direction: row;
+  margin-left: 8%;
+  margin-top: 8%;
+}
+.navBarBar li {
+  list-style-type: none;
+}
+.navBarBar a {
+  color: #e09794;
+  font-size: 20px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.navBarBar a:hover {
+  color: white;
+}
+.socialBar {
+  flex: 2;
+}
+
+.socialBarNav {
+  display: flex;
+  flex-direction: row;
+  margin-left: 8%;
+  margin-top: 23%;
+}
+
+.socialBarNav li {
+  list-style-type: none;
+}
+
+.Icon {
+  color: #e09794;
+  font-size: 30px;
+}
+
+#githubIcon:hover {
+  color: #6e5494;
+}
+#linkedInIcon:hover {
+  color: #2867b2;
+}
+#mediumIcon:hover {
+  color: #00ab6c;
+}
+#menuIcon:hover {
+  color: white;
+}
+.home {
+  width: 100%;
+  height: 82vh;
+  display: flex;
+  flex-direction: row;
+}
+.homeTitle {
+  flex: 1.5;
+  margin-top: 100px;
+  margin-right: 0;
+}
+.homeImage {
+  flex: 1;
+}
+.homeTitle h1 {
+  font-size: 150px;
+  padding-bottom: 10px;
+  margin-left: 70%;
+}
+.homeTitle h2 {
+  font-size: 100px;
+  margin-left: 41%;
+}
+.homeTitle h3 {
+  font-size: 30px;
+  margin-left: 23%;
+}
+.AmyFranzIcon {
+  width: 115%;
+}
+.projects {
+  width: 70%;
+  height: 85vh;
+  margin-left: 17%;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  background-color: rgba(250, 197, 197, 0.5);
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  border-radius: 6px;
+  -webkit-box-shadow: 0px 0px 40px 2px #000000;
+  -moz-box-shadow: 0px 0px 40px 2px #000000;
+  box-shadow: 0px 0px 40px 2px #000000;
+}
+.slides {
+  margin-top: 2%;
+  background-color: #e09794;
+  width: 70%;
+  height: 90%;
+  -webkit-box-shadow: -14px 14px 21px -7px rgba(102, 91, 102, 0.52);
+  -moz-box-shadow: -14px 14px 21px -7px rgba(102, 91, 102, 0.52);
+  box-shadow: -14px 14px 21px -7px rgba(102, 91, 102, 0.52);
+}
+
+.carText {
+  display: flex;
+  margin-top: 2%;
+  flex-direction: column;
+  text-align: center;
+  color: aliceblue;
+}
+.carLinks a {
+  color: aliceblue;
+  margin-left: 2%;
+  margin-right: 2%;
+  text-decoration: none;
+}
+
+.carImg {
+  margin-top: 2%;
+  margin-left: 10%;
+  width: 80%;
+  background-color: aliceblue;
+  padding: 0.7%;
+}
+
+.aboutMe {
+  width: 100%;
+  font-size: 20px;
+}
+
+.aboutMe i {
+  font-weight: 600;
+}
+.aboutMe a {
+  text-decoration: none;
+  font-weight: 800;
+  color: black;
+}
+.aboutMe a:hover {
+  color: white;
+}
+.aboutMe h1 {
+  text-align: center;
+  font-size: 60px;
+  padding: 20px;
+}
+.aboutMe h2 {
+  text-align: center;
+  font-size: 25px;
+  padding-bottom: 20px;
+}
+
+.alignRight {
+  background-color: rgba(250, 197, 197, 0.8);
+  width: 50%;
+  margin-left: 4%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  padding: 10px;
+  border-radius: 6px;
+  -webkit-box-shadow: -14px 14px 21px -7px rgba(102, 91, 102, 0.52);
+  -moz-box-shadow: -14px 14px 21px -7px rgba(102, 91, 102, 0.52);
+  box-shadow: -14px 14px 21px -7px rgba(102, 91, 102, 0.52);
+}
+
+.alignLeft {
+  background-color: rgba(250, 197, 197, 0.8);
+  width: 50%;
+  margin-left: 46%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  padding: 10px;
+  border-radius: 6px;
+  -webkit-box-shadow: -14px 14px 21px -7px rgba(102, 91, 102, 0.52);
+  -moz-box-shadow: -14px 14px 21px -7px rgba(102, 91, 102, 0.52);
+  box-shadow: -14px 14px 21px -7px rgba(102, 91, 102, 0.52);
+}
+.aboutMeCTA {
+  padding-top: 1.5%;
+  background-color: #d1e6df;
+  -webkit-box-shadow: -14px 14px 21px -7px rgba(102, 91, 102, 0.52);
+  -moz-box-shadow: -14px 14px 21px -7px rgba(102, 91, 102, 0.52);
+  box-shadow: -14px 14px 21px -7px rgba(102, 91, 102, 0.52);
+}
+.aboutMeCTA a {
+  color: #e09794;
+}
+
+.contactMe {
+  height: 55vh;
+  margin-top: 5%;
+  margin-bottom: 3%;
+  width: 50%;
+  margin-left: 25%;
+  text-align: center;
+  background-color: #d1e6df;
+  -webkit-box-shadow: -14px 14px 21px -7px rgba(102, 91, 102, 0.52);
+  -moz-box-shadow: -14px 14px 21px -7px rgba(102, 91, 102, 0.52);
+  box-shadow: -14px 14px 21px -7px rgba(102, 91, 102, 0.52);
+}
+.contactMeTitle {
+  font-size: 50px;
+  padding-top: 5%;
+}
+
+.contactMeInfo {
+  font-size: 30px;
+}
+.contactMeInfo P {
+  margin-top: 8%;
+}
+.contactMeInfo a {
+  text-decoration: none;
+  color: #e09794;
+}
+.contactMeInfo a:hover {
+  color: white;
+}
+
+.linkedInIcon {
+  margin-right: 2%;
+}
+.emailIcon {
+  margin-right: 2%;
+}
+.footer {
+  background-color: rgba(250, 197, 197, 0.8);
+  display: flex;
+  flex-direction: row;
+  padding: 1.5%;
+}
+.copyRight {
+  flex: 50;
+  text-align: center;
+  font-size: 20px;
+}
+.upArrow {
+  flex: 1;
+}
+.upArrowIcon {
+  font-size: 30px;
+  color: rgb(34, 32, 32);
+}
+
+.upArrowIcon:hover {
+  color: #d1e6df;
+}

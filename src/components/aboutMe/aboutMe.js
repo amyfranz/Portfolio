@@ -1,22 +1,23 @@
 import React from "react";
+import styles from "../../styles1.module.css";
 
 export default function aboutMe() {
   return (
-    <div className="aboutMe" id="aboutMe">
-      <div className="aboutMeInfo">
+    <div className={styles.aboutMe} id="aboutMe">
+      <div className={styles.aboutMeInfo}>
         <h1>Hi, I am Amy.</h1>
         <h2>A London based full-stack developer specialising in React.</h2>
-        <p>
+        <p className={styles.alignRight}>
           After being introduced to coding from a young age, I have always had a
           passion for it. I first started properly coding in school where I was
-          taught to code in <b>Delphi</b>, a language derived from pascal. I
+          taught to code in <i>Delphi</i>, a language derived from pascal. I
           really enjoyed coding but like many, I had the misconception that
           being a programmer was an “unsociable job”, so I decided to study
           branding, a good mix of design, strategy and logic.
         </p>
-        <p>
+        <p className={styles.alignLeft}>
           During this time, I started working for tech startup companies,
-          <a
+           {" "}<a
             target="_blank"
             rel="noopener noreferrer"
             href="https://www.pragmattica.co.za/"
@@ -47,8 +48,8 @@ export default function aboutMe() {
           </a>
           .
         </p>
-        <p>
-          During this very intensive month, I learnt to code in <b>C++</b> and
+        <p className={styles.alignRight}>
+          During this very intensive month, I learnt to code in <i>C++</i> and
           realised that working in tech is what I wanted to do. After this
           course, I moved to London with the goal of doing another Bootcamp so I
           could become a web-developer. While I was settling down in London, I
@@ -65,12 +66,12 @@ export default function aboutMe() {
           >
             Flatiron
           </a>{" "}
-          in January 2020. During this time I have learnt <b>Ruby</b>,{" "}
-          <b>Rails</b>, <b>Javascript</b>,<b>React</b> and <b>Redux</b>. I have
+          in January 2020. During this time I have learnt <i>Ruby</i>,{" "}
+          <i>Rails</i>, <i>Javascript</i>, <i>React</i> and <i>Redux</i>. I have
           enjoyed really enjoyed the course and it has really solidified my
           passion for coding.
         </p>
-        <p>
+        <p className={styles.alignLeft}>
           I am also currently studying{" "}
           <a
             href="https://www.ducere.edu.au/"
@@ -83,8 +84,8 @@ export default function aboutMe() {
           company.
         </p>
       </div>
-      <div className="aboutMeCTA">
-        <p>
+      <div className={styles.aboutMeCTA}>
+        <h2>
           You can get my{" "}
           <a
             href="https://docs.google.com/document/d/1ZMkqdnXGpH5gSMaIi3t3U78OrY8eIOVwMEXrKVUqduM/edit?usp=sharing"
@@ -93,8 +94,8 @@ export default function aboutMe() {
           >
             resume
           </a>{" "}
-          here, even better, why not <a href="#contactMe">get in touch</a>?
-        </p>
+          here, better yet, why not <a href="#contactMe">get in touch</a>?
+        </h2>
       </div>
     </div>
   );
