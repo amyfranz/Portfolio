@@ -2,12 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
 import "./styles1.module.css"
-import Project1 from "./components/projects/project1/project1.js";
-import Project2 from "./components/projects/project2/Project2.js";
-import Project3 from "./components/projects/project3/Project3.js";
-import Project4Login from "./components/projects/project4/login/login.js";
-import Project4SignUp from "./components/projects/project4/signup/signup.js";
-import Project4Dashboard from "./components/projects/project4/dashboard/dashboard.js";
 import * as serviceWorker from "./serviceWorker";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
@@ -28,12 +22,6 @@ ReactDOM.render(
   <Router>
     <div>
       <Route exact path="/" component={App} />
-      <Route exact path="/project1" component={Project1} />
-      <Route exact path="/project2" component={Project2} />
-      <Route exact path="/project3" component={Project3} />
-      <Route path="/project4/login" component={Project4Login} />
-      <Route path="/project4/signup" component={Project4SignUp} />
-      <Route path="/project4/dashboard" component={Project4Dashboard} />
     </div>
   </Router>,
   document.getElementById("root")

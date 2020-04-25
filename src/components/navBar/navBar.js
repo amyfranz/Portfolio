@@ -5,7 +5,6 @@ import {
   faLinkedinIn,
   faMediumM,
 } from "@fortawesome/free-brands-svg-icons";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
 import Image from "../../../src/assets/navLogo.png";
 import styles from "../../styles1.module.css";
 
@@ -24,7 +23,13 @@ export default function navBar() {
             <a href="#aboutMe">About Me</a>
           </li>
           <li className={styles.navBarLink}>
-            <a href="#blog">Blog</a>
+            <a
+              href="https://medium.com/@amy.franz"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Blog
+            </a>
           </li>
           <li className={styles.navBarLink}>
             <a href="#contactMe">Contact Me</a>

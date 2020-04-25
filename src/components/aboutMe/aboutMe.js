@@ -6,7 +6,7 @@ export default function aboutMe() {
     <div className={styles.aboutMe} id="aboutMe">
       <div className={styles.aboutMeInfo}>
         <h1>Hi, I am Amy.</h1>
-        <h2>A London based full-stack developer specialising in React.</h2>
+        <h2>A London based full-stack developer specialising in React and Rails.</h2>
         <h2>A Bit About Me</h2>
         <p className={styles.alignRight}>
           After being introduced to coding from a young age, I have always had a
@@ -39,7 +39,7 @@ export default function aboutMe() {
           soon, however, hit a big roadblock, I needed to create a website that
           would automate certain jobs like connecting a company with a student.
           So I took a big risk and moved from South Africa to Paris where I took
-          part in a month Bootcamp at a school called{" "}
+          part in a month long Bootcamp at a school called{" "}
           <a
             href="https://www.42.us.org/"
             target="_blank"
@@ -69,8 +69,8 @@ export default function aboutMe() {
           </a>{" "}
           in January 2020. During this time I have learnt <i>Ruby</i>,{" "}
           <i>Rails</i>, <i>Javascript</i>, <i>React</i> and <i>Redux</i>. I have
-          enjoyed really enjoyed the course and it has really solidified my
-          passion for coding.
+          really enjoyed the course and it has really solidified my passion for
+          coding.
         </p>
         <p className={styles.alignLeft}>
           I am also currently studying{" "}

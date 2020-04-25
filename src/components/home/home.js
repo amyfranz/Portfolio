@@ -77,6 +77,16 @@ export default class home extends Component {
               <li>a</li>
               <li>c</li>
               <li>t</li>
+              <li> </li>
+              <li>a</li>
+              <li>n</li>
+              <li>d</li>
+              <li> </li>
+              <li>r</li>
+              <li>a</li>
+              <li>i</li>
+              <li>l</li>
+              <li>s</li>
               <li>.</li>
             </ul>
           </h3>
