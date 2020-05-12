@@ -6,7 +6,9 @@ export default function aboutMe() {
     <div className={styles.aboutMe} id="aboutMe">
       <div className={styles.aboutMeInfo}>
         <h1>Hi, I am Amy.</h1>
-        <h2>A London based full-stack developer specialising in React and Rails.</h2>
+        <h2>
+          A London based full-stack developer specialising in React and Rails.
+        </h2>
         <h2>A Bit About Me</h2>
         <p className={styles.alignRight}>
           After being introduced to coding from a young age, I have always had a
@@ -89,7 +91,7 @@ export default function aboutMe() {
         <h2>
           You can get my{" "}
           <a
-            href="https://docs.google.com/document/d/1ZMkqdnXGpH5gSMaIi3t3U78OrY8eIOVwMEXrKVUqduM/edit?usp=sharing"
+            href="https://docs.google.com/document/d/1bis_z1MODpeD1PmyuO0Qrufkz81Gn0ii9qvFKrGlEVY/edit?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
           >
