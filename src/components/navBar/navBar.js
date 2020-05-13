@@ -6,7 +6,6 @@ import {
   faMediumM,
 } from "@fortawesome/free-brands-svg-icons";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
-import Image from "../../../src/assets/navLogo.png";
 import "./navBar.css";
 
 export default class navBar extends Component {
@@ -19,7 +18,7 @@ export default class navBar extends Component {
       <div>
         <div className="nav">
           <a href="#home" className="logo">
-            <img src={Image} alt="Logo" />
+            <img src={"assets/navLogo.png"} alt="Logo" />
           </a>
           <div className="HamburgerMenu" onClick={this.HamburgerClickedToggle}>
             <FontAwesomeIcon icon={faBars} />

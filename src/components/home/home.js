@@ -1,4 +1,3 @@
-import Image from "../../../src/assets/homeImg.png";
 import React, { Component } from "react";
 import "./home.css";
 
@@ -12,7 +11,11 @@ export default class home extends Component {
           <h3>I am a fullstack developer specialising in React and Rails.</h3>
         </div>
         <div className="homeImage">
-          <img src={Image} alt="Amy Franz Icon" className="AmyFranzIcon"></img>
+          <img
+            src={"assets/homeImg.png"}
+            alt="Amy Franz Icon"
+            className="AmyFranzIcon"
+          ></img>
         </div>
       </div>
     );
