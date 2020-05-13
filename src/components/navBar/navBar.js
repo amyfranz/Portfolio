@@ -18,7 +18,7 @@ export default class navBar extends Component {
       <div>
         <div className="nav">
           <a href="#home" className="logo">
-            <img src={"assets/navLogo.png"} alt="Logo" />
+            <img src={"assets/NavBarImageTwo.png"} alt="Logo" />
           </a>
           <div className="HamburgerMenu" onClick={this.HamburgerClickedToggle}>
             <FontAwesomeIcon icon={faBars} />

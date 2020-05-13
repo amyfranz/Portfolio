@@ -4,7 +4,7 @@
   margin-top: 2em;
   background-color: rgba(250, 197, 197);
   display: flex;
-  padding: 1em;
+  padding: 0.5em;
   font-size: 5vw;
 }
 .upArrow {
@@ -21,6 +21,6 @@
 
 @media only screen and (min-width: 500px) {
   .footer {
-    font-size: 2em;
+    font-size: 1.5em;
   }
 }

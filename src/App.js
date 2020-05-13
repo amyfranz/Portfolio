@@ -16,8 +16,10 @@ class App extends Component {
         <Home />
         <main>
           <Portfolio />
+        </main>
+        <Blogs />
+        <main>
           <AboutMe />
-          <Blogs />
         </main>
         <ContactMe />
         <Footer />

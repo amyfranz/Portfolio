@@ -25,18 +25,21 @@
 }
 
 .homeTitle h1:hover,
-.homeTitle h2:hover,
-.homeTitle h3:hover {
+.homeTitle h2:hover {
   color: #e09794;
   transform: scale(1.2);
+}
+.homeTitle h3:hover {
+  color: #e09794;
+  transform: scale(1.1);
 }
 
 .homeImage {
   display: none;
 }
 .homeImage img {
-  width: 50%;
-  height: 50%;
+  width: 30%;
+  height: 30%;
 }
 @media only screen and (min-width: 475px) {
   .home {
@@ -46,13 +49,13 @@
 
 @media only screen and (orientation: landscape) {
   .homeTitle h1 {
-    font-size: 15vw;
+    font-size: 10vw;
   }
   .homeTitle h2 {
-    font-size: 8vw;
+    font-size: 5vw;
   }
   .homeTitle h3 {
-    font-size: 3vw;
+    font-size: 2.5vw;
   }
   .homeImage {
     display: contents;

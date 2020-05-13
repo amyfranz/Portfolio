@@ -39,9 +39,9 @@
 
 @media only screen and (min-width: 500px) {
   .contactMeTitle h1 {
-    font-size: 6em;
+    font-size: 3em;
   }
   .contactMeCard p {
-    font-size: 2em;
+    font-size: 1.5em;
   }
 }

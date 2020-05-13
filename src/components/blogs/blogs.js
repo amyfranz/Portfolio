@@ -30,19 +30,6 @@ export default class blogs extends Component {
               ))
             : null}
         </div>
-        <div className="aboutMeCTA">
-          <h2>
-            You can get my{" "}
-            <a
-              href="https://docs.google.com/document/d/1bis_z1MODpeD1PmyuO0Qrufkz81Gn0ii9qvFKrGlEVY/edit?usp=sharing"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              resume
-            </a>{" "}
-            here, better yet, why not <a href="#contactMe">get in touch</a>?
-          </h2>
-        </div>
       </div>
     );
   }

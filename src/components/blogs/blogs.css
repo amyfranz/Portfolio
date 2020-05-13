@@ -1,35 +1,25 @@
 .blogs {
+  position: relative;
   display: flex;
+  top: 22vh;
   flex-direction: column;
+  padding-bottom: 2em;
 }
 
 .blogTitle h1 {
   text-align: center;
-  margin: 0.5em 0 0.5em 0;
   font-size: 10vw;
 }
 
 .blogContainer {
   display: flex;
   overflow-x: scroll;
-  margin: 1em 0 1em 0;
+  margin: 0 0 1em 0;
 }
 
-.aboutMeCTA {
-  width: 100%;
-  padding: 20px 0 20px 0;
-  text-align: center;
-  background-color: #d1e6df;
-  -webkit-box-shadow: -14px 14px 21px -7px rgba(102, 91, 102, 0.52);
-  -moz-box-shadow: -14px 14px 21px -7px rgba(102, 91, 102, 0.52);
-  box-shadow: -14px 14px 21px -7px rgba(102, 91, 102, 0.52);
-}
-.aboutMeCTA a {
-  color: #e09794;
-}
 .blogCard {
   background-color: white;
-  margin: 0.25em;
+  margin: 0 0.25em 0 0.25em;
   padding: 1.5em 0 1em 0;
   width: auto;
   display: flex;
@@ -45,13 +35,14 @@
 }
 
 .blogCard h1 {
+  font-size: 6vw;
   text-align: center;
   padding: 0 0.3em 0 0.3em;
 }
 .blogCard a {
   text-align: center;
   padding: 0 0.3em 0 0.3em;
-  font-size: 1.5em;
+  font-size: 5vw;
   color: rgb(250, 197, 197);
 }
 .blogCard a:hover {
@@ -69,9 +60,12 @@
 }
 @media only screen and (min-width: 500px) {
   .blogTitle h1 {
-    font-size: 6em;
+    font-size: 3em;
+  }
+  .blogCard h1 {
+    font-size: 1.5em;
   }
   .blogCard a {
-    font-size: 1.5em;
+    font-size: 1.3em;
   }
 }

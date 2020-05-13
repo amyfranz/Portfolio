@@ -5,11 +5,7 @@ export default function aboutMe() {
   return (
     <div className="aboutMe" id="aboutMe">
       <div className="aboutMeInfo">
-        <h1>Hi, I am Amy.</h1>
-        <h3>
-          A London based full-stack developer specialising in React and Rails.
-        </h3>
-        <h2>A Bit About Me</h2>
+        <h1>A Bit About Me</h1>
         <div className="aboutMeText">
           <p className="alignLeft">
             After being introduced to coding from a young age, I have always had
@@ -94,6 +90,19 @@ export default function aboutMe() {
             company.
           </p>
         </div>
+      </div>
+      <div className="aboutMeCTA">
+        <h2>
+          You can get my{" "}
+          <a
+            href="https://docs.google.com/document/d/1bis_z1MODpeD1PmyuO0Qrufkz81Gn0ii9qvFKrGlEVY/edit?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            resume
+          </a>{" "}
+          here, better yet, why not <a href="#contactMe">get in touch</a>?
+        </h2>
       </div>
     </div>
   );
