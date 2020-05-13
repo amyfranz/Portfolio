@@ -1,15 +1,13 @@
 import React from "react";
-import styles from "../../styles1.module.css";
 
 export default function project({ item }) {
-  const img = require(`../../../src/assets/${item.url}.png`);
   return (
-    <div className={styles.ProjectCard}>
-      <img className={styles.ProjectImg} src={img} alt=""></img>
-      <div className={styles.ProjectText}>
+    <div className="ProjectCard">
+      <img className="ProjectImg" src={`assets/${item.url}.png`} alt=""></img>
+      <div className="ProjectText">
         <h1>{item.title}</h1>
         <h2>{item.lang}</h2>
-        <div className={styles.ProjectLinks}>
+        <div className="ProjectLinks">
           <a
             href={item.projectSrc}
             alt="code"

@@ -1,0 +1,47 @@
+.contactMe {
+  position: relative;
+  top: 25vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contactMeCard {
+  width: 70vw;
+  max-width: 700px;
+  background-color: #d1e6df;
+  border-radius: 1em;
+  padding: 2em;
+  text-align: center;
+}
+.contactMeTitle h1 {
+  font-size: 10vw;
+  margin-bottom: 0.3em;
+}
+
+.contactMeCard p {
+  font-size: 4vw;
+}
+
+.contactMeCard a {
+  color: #e09794;
+}
+
+.contactMeCard a:hover {
+  color: white;
+}
+
+.linkedInIcon,
+.emailIcon,
+.gitHubIcon,
+.mediumIcon {
+  margin-right: 0.5em;
+}
+
+@media only screen and (min-width: 500px) {
+  .contactMeTitle h1 {
+    font-size: 6em;
+  }
+  .contactMeCard p {
+    font-size: 2em;
+  }
+}

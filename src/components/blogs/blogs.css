@@ -1,0 +1,77 @@
+.blogs {
+  display: flex;
+  flex-direction: column;
+}
+
+.blogTitle h1 {
+  text-align: center;
+  margin: 0.5em 0 0.5em 0;
+  font-size: 10vw;
+}
+
+.blogContainer {
+  display: flex;
+  overflow-x: scroll;
+  margin: 1em 0 1em 0;
+}
+
+.aboutMeCTA {
+  width: 100%;
+  padding: 20px 0 20px 0;
+  text-align: center;
+  background-color: #d1e6df;
+  -webkit-box-shadow: -14px 14px 21px -7px rgba(102, 91, 102, 0.52);
+  -moz-box-shadow: -14px 14px 21px -7px rgba(102, 91, 102, 0.52);
+  box-shadow: -14px 14px 21px -7px rgba(102, 91, 102, 0.52);
+}
+.aboutMeCTA a {
+  color: #e09794;
+}
+.blogCard {
+  background-color: white;
+  margin: 0.25em;
+  padding: 1.5em 0 1em 0;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 1em;
+}
+
+.blogCard img {
+  width: 50vw;
+  max-width: 600px;
+}
+
+.blogCard h1 {
+  text-align: center;
+  padding: 0 0.3em 0 0.3em;
+}
+.blogCard a {
+  text-align: center;
+  padding: 0 0.3em 0 0.3em;
+  font-size: 1.5em;
+  color: rgb(250, 197, 197);
+}
+.blogCard a:hover {
+  color: #d1e6df;
+}
+
+.style-1::-webkit-scrollbar {
+  width: 10px;
+}
+
+.style-1::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: rgb(250, 197, 197);
+}
+@media only screen and (min-width: 500px) {
+  .blogTitle h1 {
+    font-size: 6em;
+  }
+  .blogCard a {
+    font-size: 1.5em;
+  }
+}

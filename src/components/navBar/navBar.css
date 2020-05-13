@@ -1,0 +1,131 @@
+.nav {
+  background-color: #d1e6df;
+  top: 0;
+  padding: 0.5em;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 100%;
+  height: 23vw;
+  max-height: 110px;
+  z-index: 5;
+  -webkit-box-shadow: -0.88rem 0.88rem 1.31rem 0.44rem rgba(102, 91, 102, 0.52);
+  -moz-box-shadow: -0.88rem 0.88rem 1.31rem 0.44rem rgba(102, 91, 102, 0.52);
+  box-shadow: -0.88rem 0.88rem 1.31rem 0.44rem rgba(102, 91, 102, 0.52);
+  font-size: 2vw;
+}
+
+.logo {
+  align-self: flex-start;
+  width: 20%;
+  max-width: 95px;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.HamburgerMenu {
+  width: auto;
+  font-size: 2rem;
+  color: #e09794;
+  padding-right: 0.5em;
+}
+
+.HamburgerMenu:hover {
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+.navBarBar {
+  display: none;
+}
+
+.navBarBar li {
+  width: auto;
+}
+
+.navBarBar a {
+  color: #e09794;
+}
+
+.socialBarNav {
+  display: none;
+}
+
+.socialBarNav li {
+  width: auto;
+}
+
+.socialBarNav a {
+  color: #e09794;
+}
+#githubIcon:hover {
+  color: #6e5494;
+}
+#linkedInIcon:hover {
+  color: #2867b2;
+}
+#mediumIcon:hover {
+  color: #00ab6c;
+}
+#menuIcon:hover {
+  color: white;
+}
+
+.SideMenu {
+  position: fixed;
+  top: 23vw;
+  right: 0px;
+  padding: 1em;
+  width: auto;
+  z-index: 5;
+  background-color: #e09794;
+  -webkit-box-shadow: -0.88rem 0.88rem 1.31rem 0.44rem rgba(102, 91, 102, 0.52);
+  -moz-box-shadow: -0.88rem 0.88rem 1.31rem 0.44rem rgba(102, 91, 102, 0.52);
+  box-shadow: -0.88rem 0.88rem 1.31rem 0.44rem rgba(102, 91, 102, 0.52);
+}
+
+.SideMenu li {
+  margin: 0.5em 0 0.5em 0;
+}
+
+.SideMenu a {
+  font-size: 150%;
+  color: rgb(102, 91, 102);
+}
+
+@media only screen and (min-width: 475px) {
+  .SideMenu {
+    top: 110px;
+  }
+}
+
+@media only screen and (orientation: landscape) {
+  .nav {
+    justify-content: space-between;
+  }
+  .SideMenu {
+    display: none;
+  }
+  .HamburgerMenu {
+    display: none;
+  }
+  .navBarBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 50%;
+  }
+  .socialBarNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 20%;
+  }
+}

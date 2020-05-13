@@ -1,65 +1,79 @@
 import React, { Component } from "react";
-import styles from "../../styles1.module.css";
-import Items from "../../data.js";
+import Data from "../../data.js";
 import Project from "./project";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBackward, faForward } from "@fortawesome/free-solid-svg-icons";
+import "./portfolio.css";
 
 export default class Portfolio extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      properties: Items.items,
-      property: Items.items[0],
+      properties: Data.items,
+      index: 0,
     };
   }
+
+  componentDidMount() {
+    var interval = setInterval(this.timer, 3000);
+    this.setState({ interval: interval });
+  }
+
   render() {
-    console.log(this.state);
     return (
       <div id="portfolio">
-        <div className={styles.myProjects}>
-          <div className={styles.myProjectsTitle}>
-            <h1>My Projects</h1>
+        <div className="myProjectsTitle">
+          <h1>My Projects</h1>
+        </div>
+        <div className="myProjects">
+          <div className="Project1">
+            <Project
+              item={
+                this.state.properties[
+                  this.state.index === 0
+                    ? this.state.properties.length - 1
+                    : this.state.index - 1
+                ]
+              }
+              key={1}
+            />
           </div>
-          <div className={styles.projects}>
-          <button onClick={this.prevProperty} className={styles.navBtn}>
-                <FontAwesomeIcon icon={faBackward} id={styles.linkedInIcon} />
-              </button>
-            <div className={styles.slides}>
-              <Project
-                item={this.state.property}
-                key={this.state.property.projectSrc}
-              />
+          <div className="mainProject">
+            <div className="projects">
+              <Project item={this.state.properties[this.state.index]} key={2} />
             </div>
-            <button onClick={this.nextProperty} className={styles.navBtn}>
-                <FontAwesomeIcon icon={faForward} id={styles.linkedInIcon} />
-              </button>
+            <div className="myProjectsBtn">
+              {this.state.properties.map((button, index) => (
+                <button
+                  className={`roundBtn ${
+                    index === this.state.index ? "selected" : null
+                  }`}
+                  value={index}
+                  key={index}
+                  onClick={() => this.setState({ index })}
+                />
+              ))}
+            </div>
+          </div>
+          <div className="Project3">
+            <Project
+              item={
+                this.state.properties[
+                  this.state.index === this.state.properties.length - 1
+                    ? 0
+                    : this.state.index + 1
+                ]
+              }
+              key={3}
+            />
           </div>
         </div>
       </div>
     );
   }
-
-  nextProperty = () => {
-    let NewIndex;
-    if (this.state.property.index === Items.items.length - 1) {
-      NewIndex = 0;
-    } else {
-      NewIndex = this.state.property.index + 1;
-    }
-    this.setState({
-      property: Items.items[NewIndex],
-    });
-  };
-  prevProperty = () => {
-    let NewIndex;
-    if (this.state.property.index === 0) {
-      NewIndex = Items.items.length - 1;
-    } else {
-      NewIndex = this.state.property.index - 1;
-    }
-    this.setState({
-      property: Items.items[NewIndex],
-    });
+  timer = () => {
+    const newIndex =
+      this.state.index < this.state.properties.length - 1
+        ? this.state.index + 1
+        : 0;
+    this.setState({ index: newIndex });
   };
 }

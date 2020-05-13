@@ -3,6 +3,15 @@ export default {
     {
       name: "item1",
       index: 0,
+      url: "Petatude",
+      title: "Petatude",
+      lang: "Backend: Rails, Frontend: React",
+      codeSrc: "https://github.com/amyfranz/final_project_frontend",
+      projectSrc: "https://petatude.netlify.app",
+    },
+    {
+      name: "item2",
+      index: 0,
       url: "WeatherApp",
       title: "Weather App",
       lang: "React",
@@ -10,7 +19,7 @@ export default {
       projectSrc: "https://amy-weather-app.netlify.app",
     },
     {
-      name: "item2",
+      name: "item3",
       index: 1,
       url: "Movie",
       title: "Movie Finder",
@@ -19,7 +28,7 @@ export default {
       projectSrc: "https://amy-movie-search.netlify.app",
     },
     {
-      name: "item3",
+      name: "item4",
       index: 2,
       url: "Recipe",
       title: "Recipe Search",
@@ -28,7 +37,7 @@ export default {
       projectSrc: "https://amy-recipe-finder.netlify.app",
     },
     {
-      name: "item4",
+      name: "item5",
       index: 3,
       url: "Messenger",
       title: "Messenger",
@@ -37,7 +46,7 @@ export default {
       projectSrc: "https://amy-messanging-app.netlify.app",
     },
     {
-      name: "item5",
+      name: "item6",
       index: 4,
       url: "JS30",
       title: "JS 30 Challenge",
@@ -46,7 +55,7 @@ export default {
       projectSrc: "https://codepen.io/collection/nqVMBL",
     },
     {
-      name: "item5",
+      name: "item7",
       index: 5,
       url: "Theatre",
       title: "Theatre Ticket Booking",
@@ -55,11 +64,11 @@ export default {
       projectSrc: "https://youtu.be/4OqoX8RX3qA",
     },
     {
-      name: "item6",
+      name: "item8",
       index: 6,
       url: "Corona",
       title: "Corona Virus Website",
-      lang: "Backend: rails, Frontend: Javascript",
+      lang: "Backend: Rails, Frontend: JS",
       codeSrc: "https://github.com/amyfranz/CoronaVirus",
       projectSrc: "https://youtu.be/XHkrBMy8yf8",
     },

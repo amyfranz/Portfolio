@@ -1,0 +1,84 @@
+.aboutMe {
+  width: 90%;
+  font-size: 1.5rem;
+  margin-left: 5%;
+  border-radius: 1rem;
+}
+
+.aboutMe i {
+  font-weight: 600;
+}
+.aboutMe a {
+  text-decoration: none;
+  font-weight: 800;
+  color: black;
+}
+.aboutMe a:hover {
+  color: white;
+}
+.aboutMe h1 {
+  text-align: center;
+  font-size: 10vw;
+  padding: 2rem;
+}
+.aboutMe h2 {
+  text-align: center;
+  font-size: 8vw;
+  padding-bottom: 20px;
+}
+.aboutMe h3 {
+  text-align: center;
+  font-size: 5vw;
+  padding-bottom: 20px;
+}
+
+.aboutMe p {
+  font-size: 5vw;
+}
+
+.aboutMeText {
+  display: flex;
+  flex-direction: column;
+}
+
+.alignRight {
+  background-color: rgba(250, 197, 197, 0.9);
+  align-self: flex-end;
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 10px;
+  padding: 16px;
+  border-radius: 1rem;
+  -webkit-box-shadow: -0.88rem 0.88rem 1.31rem 0.44rem rgba(102, 91, 102, 0.52);
+  -moz-box-shadow: -0.88rem 0.88rem 1.31rem 0.44rem rgba(102, 91, 102, 0.52);
+  box-shadow: -0.88rem 0.88rem 1rem 0.2rem rgba(102, 91, 102, 0.52);
+}
+
+.alignLeft {
+  background-color: rgba(250, 197, 197, 0.9);
+  width: 100%;
+  max-width: 800px;
+  align-self: flex-start;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 16px;
+  border-radius: 1rem;
+  -webkit-box-shadow: -0.88rem 0.88rem 1.31rem 0.44rem rgba(102, 91, 102, 0.52);
+  -moz-box-shadow: -0.88rem 0.88rem 1.31rem 0.44rem rgba(102, 91, 102, 0.52);
+  box-shadow: -0.88rem 0.88rem 1rem 0.2rem rgba(102, 91, 102, 0.52);
+}
+
+@media only screen and (min-width: 500px) {
+  .aboutMe h1 {
+    font-size: 2.5em;
+  }
+  .aboutMe h2 {
+    font-size: 2em;
+  }
+  .aboutMe h3 {
+    font-size: 1.5em;
+  }
+  .aboutMe p {
+    font-size: 1em;
+  }
+}

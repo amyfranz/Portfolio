@@ -1,11 +1,12 @@
 import React, { Component } from "react";
 import NavBar from "./components/navBar/navBar";
 import Home from "./components/home/home";
+import Blogs from "./components/blogs/blogs";
 import AboutMe from "./components/aboutMe/aboutMe";
 import Portfolio from "./components/portfolio/portfolio";
 import ContactMe from "./components/contactMe/contactMe";
 import Footer from "./components/footer/footer";
-import "./styles1.module.css";
+import "./styles.css";
 
 class App extends Component {
   render() {
@@ -15,7 +16,8 @@ class App extends Component {
         <Home />
         <main>
           <Portfolio />
-          <AboutMe /> {/* <Blog /> */}
+          <AboutMe />
+          <Blogs />
         </main>
         <ContactMe />
         <Footer />

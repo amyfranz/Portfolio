@@ -1,0 +1,123 @@
+.myProjects {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.mainProject {
+  position: relative;
+  margin: 0 0 2em 0;
+  background-color: white;
+  border-radius: 1em;
+  width: 90vw;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  -webkit-box-shadow: -0.88rem 0.88rem 1.31rem 0.44rem rgba(102, 91, 102, 0.52);
+  -moz-box-shadow: -0.88rem 0.88rem 1.31rem 0.44rem rgba(102, 91, 102, 0.52);
+  box-shadow: -0.88rem 0.88rem 1rem 0.2rem rgba(102, 91, 102, 0.52);
+}
+.myProjectsTitle {
+  text-align: center;
+  margin-bottom: 1em;
+  font-size: 5vw;
+}
+.ProjectCard {
+  width: 100%;
+  max-width: 500px;
+}
+.mainProject .ProjectCard img {
+  margin-top: 2em;
+}
+.projects {
+  width: auto;
+  text-align: center;
+}
+.myProjectsBtn {
+  width: auto;
+}
+.ProjectText h1 {
+  font-size: 8vw;
+}
+.ProjectText h2 {
+  font-size: 4vw;
+}
+
+.ProjectLinks a {
+  font-size: 4.5vw;
+  padding: 0.5em;
+  color: #e09794;
+}
+
+.ProjectLinks a:hover {
+  color: #d1e6df;
+}
+.roundBtn {
+  width: 10px;
+  height: 10px;
+  margin: 1em 3px 1em 3px;
+  border-radius: 50%;
+  transform: scale(1);
+  transition: all 300ms ease-in-out;
+  border: 1px solid #e09794;
+  display: inline-block;
+}
+.selected {
+  background: #e09794;
+  transform: scale(1.2);
+}
+.Project1,
+.Project3 {
+  display: none;
+}
+
+.Project1 .ProjectCard,
+.Project3 .ProjectCard {
+  background-color: white;
+  width: 400px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border-radius: 1em;
+  -webkit-box-shadow: -0.88rem 0.88rem 1.31rem 0.44rem rgba(102, 91, 102, 0.9);
+  -moz-box-shadow: -0.88rem 0.88rem 1.31rem 0.44rem rgba(102, 91, 102, 0.9);
+  box-shadow: -0.88rem 0.88rem 1rem 0.2rem rgba(102, 91, 102, 0.9);
+}
+
+.Project1 .ProjectCard .ProjectText h1,
+.Project3 .ProjectCard .ProjectText h1 {
+  font-size: 2em;
+}
+.Project1 .ProjectCard .ProjectText h2,
+.Project3 .ProjectCard .ProjectText h2 {
+  font-size: 1.3em;
+}
+.Project1 .ProjectCard .ProjectLinks a,
+.Project3 .ProjectCard .ProjectLinks a {
+  font-size: 1.5em;
+}
+
+@media only screen and (min-width: 500px) {
+  .myProjectsTitle {
+    font-size: 2.5em;
+  }
+  .ProjectText h1 {
+    font-size: 3em;
+  }
+  .ProjectText h2 {
+    font-size: 2em;
+  }
+  .ProjectLinks a {
+    font-size: 2em;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .Project1,
+  .Project3 {
+    display: contents;
+  }
+}
